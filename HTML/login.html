@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="email" id="email" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input class="btn" id="login" type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="./signup.html">Signup</a>
+            </div>
+        </form>
+    </div>
+    <div id="snackbar">Wrong email or password</div>
+    <div class="row justify-content-center">
+        <div class="spinner-border" id="spin" style="width: 3rem; height: 3rem; margin-top: 35%;" role="status" hidden>
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+</body>
+</html>
